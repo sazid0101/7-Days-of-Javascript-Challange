@@ -23,7 +23,7 @@
 // console.log(a[b])
 
 // third.............................................
-
+let car="";
 const y=0;
 const z=false;
 console.log(y==z)
@@ -32,3 +32,8 @@ console.log(0/0)
 console.log(true *2)
 console.log(NaN==NaN)
 console.log(NaN===NaN)
+console.log(typeof NaN)
+console.log(typeof typeof [1,2,3,4])
+console.log(false.constructor)
+console.log(car)
+console.log("6"/"2")
