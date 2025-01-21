@@ -4,3 +4,9 @@ const matches =sentence.match(/bangladesh/gi);
 const count=matches.length
 console.log(matches)
 console.log(count)
+
+let position = sentence.search(/bangladesh/i)
+
+position = position >= 0 ? position : "not found" //bangladeshi in not found
+
+console.log(position)
