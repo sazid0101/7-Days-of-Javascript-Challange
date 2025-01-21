@@ -5,8 +5,8 @@ const count=matches.length
 console.log(matches)
 console.log(count)
 
-let position = sentence.search(/bangladesh/i)
+let position = sentence.search(/bangladeshi/gi)
 
-position = position >= 0 ? position : "not found" //bangladeshi in not found
+position = position >= 0 ? position : "not found" //bangladeshi in not found,if remove i ,output will be 0.
 
 console.log(position)
