@@ -1,6 +1,6 @@
 const person = {
-    fullName: function() {
-      return this.firstName + " " + this.lastName;
+    fullName: function(city, country) {
+      return this.firstName + " " + this.lastName + " lives in " + city + ", " + country;
     }
   }
   const person1 = {
@@ -12,5 +12,5 @@ const person = {
     lastName: "islam"
   }
 
-  console.log(person.fullName.call(person1));
-  console.log(person.fullName.call(person2));
+  console.log(person.fullName.call(person1, "Dhaka", "Bangladesh"));
+  console.log(person.fullName.call(person2, "chittagong", "Bangladesh"));
