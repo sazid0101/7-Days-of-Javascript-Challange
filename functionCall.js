@@ -13,4 +13,4 @@ const person = {
   }
 
   console.log(person.fullName.call(person1, "Dhaka", "Bangladesh"));
-  console.log(person.fullName.call(person2, "chittagong", "Bangladesh"));
+  console.log(person.fullName.apply(person2, ["chittagong", "Bangladesh"]));
