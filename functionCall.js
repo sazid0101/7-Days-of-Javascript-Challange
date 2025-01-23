@@ -12,5 +12,6 @@ const person = {
     lastName: "islam"
   }
 
-  console.log(person.fullName.call(person1, "Dhaka", "Bangladesh"));
-  console.log(person.fullName.apply(person2, ["chittagong", "Bangladesh"]));
+  console.log(person.fullName.call(person1, "Dhaka", "Bangladesh")); //call()
+
+  console.log(person.fullName.apply(person2, ["chittagong", "Bangladesh"]));  //apply()
