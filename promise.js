@@ -8,7 +8,7 @@ const myPromise = new Promise(function(resolve, reject){
         }else{
             reject("its failed")
         }
-    }, 2000);
+    }, 1000);
 })
 
 myPromise
