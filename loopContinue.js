@@ -10,6 +10,11 @@
 
 
 
-let fruits = ["apple", "banana", "cherry"];
-let result = fruits.join("");
-console.log(result);
+// let fruits = ["apple", "banana", "cherry"];
+// let result = fruits.join(" ");
+// console.log(result);
+
+
+const statement = 'I am a hard working person';
+const reversedStatement = statement.split(' ').reverse().join(' ');
+console.log(reversedStatement)
