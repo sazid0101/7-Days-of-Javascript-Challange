@@ -35,5 +35,12 @@ const products = [
     {name : "watch", color : "golden", price : "5500",}
 ]
 const productName = products.map(product =>product.name)
-console.log(productName)
+// console.log(productName)
+
 products.forEach(product => console.log(product.price))
+
+const specificName = products.filter(product => product.price >35000)
+console.log(specificName)
+
+const specificName2 = products.filter(product=> product.name.includes("p"))
+console.log(specificName2)
