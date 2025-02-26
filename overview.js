@@ -28,19 +28,44 @@
 
 
 
-const products = [
-    {name : "laptop", color : "red", price : "35500",},
-    {name : "phone", color : "blue", price : "15500",},
-    {name : "iphone", color : "black", price : "55000",},
-    {name : "watch", color : "golden", price : "5500",}
-]
-const productName = products.map(product =>product.name)
-// console.log(productName)
+// const products = [
+//     {name : "laptop", color : "red", price : "35500",},
+//     {name : "phone", color : "blue", price : "15500",},
+//     {name : "iphone", color : "black", price : "55000",},
+//     {name : "watch", color : "golden", price : "5500",}
+// ]
+// // const productName = products.map(product =>product.name)
+// // // console.log(productName)
 
-products.forEach(product => console.log(product.price))
+// // products.forEach(product => console.log(product.price))
 
-const specificName = products.filter(product => product.price >35000)
-console.log(specificName)
+// // const specificName = products.filter(product => product.price >35000)
+// // console.log(specificName)
 
-const specificName2 = products.filter(product=> product.name.includes("p"))
-console.log(specificName2)
+// // const specificName2 = products.filter(product=> product.name.includes("p"))
+// // console.log(specificName2)
+
+// // const specificName3 = products.find(product=> product.name.includes("p"))
+// // console.log(specificName3)
+
+
+
+
+const person = {
+      name : "sazid",
+      age : 25,
+      position : "developer",
+      favSub : ["physics", "math"],
+      watch : {
+        color : "black",
+        price : 500,
+        brand : "casio"
+      }
+     }
+     
+const {name,favSub,watch} = person
+const [first] = person.favSub[0]
+const {color} = person.watch
+console.log(color)
+console.log(first)
+console.log(name,favSub,watch)
