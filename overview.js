@@ -75,6 +75,28 @@
 
 
 
+// const person3 = {
+//     name : "sazid",
+//     age : 25,
+//     position : "developer",
+//     favSub : ["physics", "math"],
+//     watch : {
+//       color : "black",
+//       price : 500,
+//       brand : "casio"
+//     }
+//    }
+//    const person4 = {"name":"sazid","age":25,"position":"developer","favSub":["physics","math"],"watch":{"color":"black","price":500,"brand":"casio"}}
+
+//    const jsonPerson3 = JSON.stringify(person3)
+//    console.log(person3)
+//    console.log(jsonPerson3)
+//    const jsonPerson4 = JSON.parse(jsonPerson3)
+//    console.log(jsonPerson4)
+
+
+
+
 const person3 = {
     name : "sazid",
     age : 25,
@@ -86,10 +108,8 @@ const person3 = {
       brand : "casio"
     }
    }
-   const person4 = {"name":"sazid","age":25,"position":"developer","favSub":["physics","math"],"watch":{"color":"black","price":500,"brand":"casio"}}
 
-   const jsonPerson3 = JSON.stringify(person3)
-   console.log(person3)
-   console.log(jsonPerson3)
-   const jsonPerson4 = JSON.parse(jsonPerson3)
-   console.log(jsonPerson4)
+const keys = Object.keys(person3)
+const values = Object.values(person3)
+console.log(keys)
+console.log(values)
