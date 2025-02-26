@@ -51,21 +51,45 @@
 
 
 
-const person = {
-      name : "sazid",
-      age : 25,
-      position : "developer",
-      favSub : ["physics", "math"],
-      watch : {
-        color : "black",
-        price : 500,
-        brand : "casio"
-      }
-     }
+// const person = {
+//       name : "sazid",
+//       age : 25,
+//       position : "developer",
+//       favSub : ["physics", "math"],
+//       watch : {
+//         color : "black",
+//         price : 500,
+//         brand : "casio"
+//       }
+//      }
      
-const {name,favSub,watch} = person
-const [first] = person.favSub[0]
-const {color} = person.watch
-console.log(color)
-console.log(first)
-console.log(name,favSub,watch)
+// const {name,favSub,watch} = person
+// const [first] = person.favSub[0]
+// const {color} = person.watch
+// console.log(color)
+// console.log(first)
+// console.log(name,favSub,watch)
+
+
+
+
+
+
+const person3 = {
+    name : "sazid",
+    age : 25,
+    position : "developer",
+    favSub : ["physics", "math"],
+    watch : {
+      color : "black",
+      price : 500,
+      brand : "casio"
+    }
+   }
+   const person4 = {"name":"sazid","age":25,"position":"developer","favSub":["physics","math"],"watch":{"color":"black","price":500,"brand":"casio"}}
+
+   const jsonPerson3 = JSON.stringify(person3)
+   console.log(person3)
+   console.log(jsonPerson3)
+   const jsonPerson4 = JSON.parse(jsonPerson3)
+   console.log(jsonPerson4)
