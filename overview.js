@@ -114,14 +114,31 @@
 // console.log(keys)
 // console.log(values)
 
-const myProducts = [
-         {name : "laptop", color : "red", price : "35500",},
-         {name : "phone", color : "blue", price : "15500",},
-         {name : "iphone", color : "black", price : "55000",},
-         {name : "watch", color : "golden", price : "5500",}
-     ]
-const newProduct = {name : "mouse", color : "yellow",}
-const newProductsArray = [...myProducts,newProduct]
-console.log(newProductsArray)
-const removeProduct = myProducts.filter(product => product.name !== "laptop")
-console.log(removeProduct)
+// const myProducts = [
+//          {name : "laptop", color : "red", price : "35500",},
+//          {name : "phone", color : "blue", price : "15500",},
+//          {name : "iphone", color : "black", price : "55000",},
+//          {name : "watch", color : "golden", price : "5500",}
+//      ]
+// const newProduct = {name : "mouse", color : "yellow",}
+// const newProductsArray = [...myProducts,newProduct]
+// console.log(newProductsArray)
+// const removeProduct = myProducts.filter(product => product.name !== "laptop")
+// console.log(removeProduct)
+
+
+const person3 = {
+    name : "sazid",
+    age : 25,
+    position : "developer",
+    favSub : ["physics", "math"],
+    watch : {
+      color : "black",
+      price : 500,
+      'brand' : "casio"
+    }
+   }
+
+   const personName = person3.name
+   console.log(personName)
+   console.log(person3.watch["brand"])
